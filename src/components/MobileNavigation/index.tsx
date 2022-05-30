@@ -1,4 +1,4 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavItem } from "models/generic.model";
 import { useState } from "react";
@@ -16,12 +16,21 @@ const MobileNavigation = ({ className = "", items }: Props) => {
 
   return (
     <>
-      <nav className={`mobile-nav ${openMenu ? "" : "closed"}`}>{content}</nav>
+      <nav
+        className={`mobile-nav ${openMenu ? "" : "closed"}`}
+        onClick={() => setOpenMenu(!openMenu)}
+      >
+        {content}
+      </nav>
       <button
         className="mobile-nav__button"
         onClick={() => setOpenMenu(!openMenu)}
       >
-        <FontAwesomeIcon icon={faBars} size="lg" color="white" />
+        {openMenu ? (
+          <FontAwesomeIcon icon={faX} size="lg" color="white" />
+        ) : (
+          <FontAwesomeIcon icon={faBars} size="lg" color="white" />
+        )}
       </button>
     </>
   );
