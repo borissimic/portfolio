@@ -1,0 +1,24 @@
+@import "styles/colors.scss";
+
+.navigation {
+  display: flex;
+  flex: 0.5;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-white;
+
+    &:hover {
+      border-bottom: 2px solid $color-primary;
+      color: $color-primary;
+    }
+    &.active {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+}

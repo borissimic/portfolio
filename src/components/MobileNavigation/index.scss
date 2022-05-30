@@ -1,0 +1,23 @@
+.mobile-nav {
+  display: flex;
+  align-items: center;
+
+  background-color: red;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &__button {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &.closed {
+    display: none;
+  }
+}
