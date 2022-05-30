@@ -11,7 +11,7 @@
     text-decoration: none;
     font-weight: bold;
     color: $color-white;
-
+    transition: all 400ms ease;
     &:hover {
       border-bottom: 2px solid $color-primary;
       color: $color-primary;

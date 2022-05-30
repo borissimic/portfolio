@@ -2,9 +2,11 @@ import "./index.scss";
 
 const HomePage = () => {
   return (
-    <div>
+    <section>
       <h1>Home Page</h1>
-    </div>
+      <h2>Moja</h2>
+      <h5>Stranica</h5>
+    </section>
   );
 };
 

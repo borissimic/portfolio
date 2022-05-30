@@ -1,0 +1,22 @@
+@import "./config.scss";
+
+$contanier-width-lg: var(--contanier-width-lg);
+$contanier-width-md: var(--contanier-width-md);
+$contanier-width-sm: var(--contanier-width-sm);
+
+.contanier {
+  width: $contanier-width-lg;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .contanier {
+    width: $contanier-width-md;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contanier {
+    width: $contanier-width-sm;
+  }
+}

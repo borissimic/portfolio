@@ -4,3 +4,7 @@ $color-primary: var(--color-primary);
 $color-primary-variant: var(--color-primary-variant);
 $color-white: var(--color-white);
 $color-light: var(--color-light);
+
+.text-light {
+  color: $color-light;
+}
