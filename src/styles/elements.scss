@@ -4,6 +4,8 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -11,7 +13,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  // margin-top: 8rem;
   h2,
   h5 {
     text-align: center;
@@ -19,26 +21,20 @@ section {
   }
   h2 {
     color: $color-primary;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
   }
-}
-
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
   .section {
-    margin-top: 6rem;
+    margin-top: 0rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .section {
     h2 {
-      margin-bottom: 2rem;
+      margin-bottom: 0;
     }
   }
 }

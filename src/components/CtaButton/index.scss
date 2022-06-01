@@ -1,16 +1,18 @@
+@import "styles/colors.scss";
+
 .btn {
   width: max-content;
   display: inline-block;
   color: $color-primary;
+  text-decoration: none;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid $color-primary;
   transition: all 400ms ease;
-
   &:hover {
-    background: $color-white;
-    color: $color-bg;
+    background: $color-bg;
+    color: $color-white;
     background-color: transparent;
   }
 

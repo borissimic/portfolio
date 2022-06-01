@@ -1,0 +1,73 @@
+@import "styles/colors.scss";
+
+.home {
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+
+  &__contanier {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  &__socials {
+    display: flex;
+    align-self: flex-end;
+    gap: 10px;
+
+    a {
+      color: $color-white;
+      transition: all 400ms ease;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  &__image_contanier {
+    height: 400px;
+    width: 400px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+.contanier__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+img {
+  display: block;
+  width: inherit;
+  object-fit: cover;
+}
+
+.cta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    text-align: center;
+
+    &__contanier {
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    &__socials {
+      display: none;
+    }
+    &__image_contanier {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
