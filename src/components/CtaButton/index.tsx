@@ -3,7 +3,7 @@ import "./index.scss";
 const CtaButton = () => {
   return (
     <div className="cta">
-      <a href="#" download className="btn">
+      <a href="/home" download className="btn">
         Download Cv
       </a>
       <a href="/contact" className="btn btn-primary">

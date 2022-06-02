@@ -4,12 +4,12 @@ import "./index.scss";
 
 const Navigation = ({ className = "", items }: Props) => {
   const content = items.map(({ name, path }) => (
-    <NavLink className={className} key={name} to={path}>
+    <NavLink key={name} to={path}>
       {name}
     </NavLink>
   ));
 
-  return <nav className="navigation footer__navigation">{content}</nav>;
+  return <nav className={`navigation ${className}`}>{content}</nav>;
 };
 
 type Props = {

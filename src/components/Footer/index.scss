@@ -1,15 +1,26 @@
 @import "styles/colors.scss";
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
   width: 100%;
-  height: 75px;
+  height: 90px;
   position: absolute;
   bottom: 0;
   background-color: $color-primary;
   grid-row-start: 4;
-}
-.navigation {
-  &footer__nav {
-    color: red;
+  &__test1 {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    align-self: center;
+  }
+
+  &_nav {
+    display: flex;
+    justify-content: space-around;
   }
 }

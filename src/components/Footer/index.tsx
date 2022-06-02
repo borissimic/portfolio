@@ -1,11 +1,8 @@
-import {
-  faLinkedin,
-  faGithub,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import HomeSocials from "components/HomeSocials";
+
 import Navigation from "components/Navigation";
+import TestSocials from "components/TestSocials";
 
 import "./index.scss";
 
@@ -16,21 +13,19 @@ const Footer = () => {
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
+  const socialsItems = [
+    {
+      href: "https://linkedin.com",
+      icon: <FontAwesomeIcon icon={faLinkedin} size="lg" color="blue" />,
+    },
+  ];
   return (
     <footer className="footer">
-      <div className="footer__socials">
-        <a href="https://linkedin.com" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} size="lg" />
-        </a>
-        <a href="https://github.com" target="_blank">
-          <FontAwesomeIcon icon={faGithub} size="lg" />
-        </a>
-        <a href="https://facebook.com" target="_blank">
-          <FontAwesomeIcon icon={faFacebook} size="lg" />
-        </a>
+      <div className="footer__test1">
+        <TestSocials className="footer_socials" items={socialsItems} />
+        {/* <Navigation className="footer_nav" items={navItems} /> */}
       </div>
-      <Navigation className="footer_nav" items={navItems} />
-      <span className="footer__text">Made by Boris Simic 2022</span>
+      <h5 className="footer__text">Made by Boris Simic 2022</h5>
     </footer>
   );
 };

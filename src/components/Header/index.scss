@@ -10,18 +10,21 @@
   background-color: $color-bg;
 
   &__navigation {
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    color: $color-white;
-    transition: all 400ms ease;
-    &:hover {
-      border-bottom: 2px solid $color-primary;
-      color: $color-primary;
-    }
-    &.active {
-      color: $color-primary;
-      border-bottom: 2px solid $color-primary;
+    a {
+      font-size: 24px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      font-weight: bold;
+      color: $color-white;
+      transition: all 400ms ease;
+      &:hover {
+        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
+      }
+      &.active {
+        color: $color-primary;
+        border-bottom: 2px solid $color-primary;
+      }
     }
   }
 }
