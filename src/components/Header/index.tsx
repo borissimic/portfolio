@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="header">
       <Logo />
-      <Navigation items={navItems} />
+      <Navigation className="header__navigation" items={navItems} />
       <MobileNavigation items={navItems} />
     </div>
   );

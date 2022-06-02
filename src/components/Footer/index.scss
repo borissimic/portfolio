@@ -5,6 +5,11 @@
   height: 75px;
   position: absolute;
   bottom: 0;
-  background-color: $color-bg;
+  background-color: $color-primary;
   grid-row-start: 4;
+}
+.navigation {
+  &footer__nav {
+    color: red;
+  }
 }

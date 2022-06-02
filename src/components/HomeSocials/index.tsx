@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HomeSocials = () => {
   return (
-    <div className="home__socials">
+    <div className="home__socials ">
       <a href="https://linkedin.com" target="_blank">
         <FontAwesomeIcon icon={faLinkedin} size="lg" />
       </a>
