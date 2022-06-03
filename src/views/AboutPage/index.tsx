@@ -1,20 +1,30 @@
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Socials from "components/Socials";
-
 import "./index.scss";
 
 const AboutPage = () => {
-  const socialsItems = [
-    {
-      href: "https://linkedin.com",
-      icon: <FontAwesomeIcon icon={faLinkedin} size="lg" color="blue" />,
-    },
-  ];
   return (
-    <div>
-      <Socials items={socialsItems} />
-    </div>
+    <section className="about ">
+      <h5>Get to know more</h5>
+      <h2>About Me</h2>
+      <article className="   about__contanier">
+        <div className="about__image">
+          <div className="about__image-frame">
+            <img src="./pictures/Me.png" alt="me" />
+          </div>
+        </div>
+        <div className="about__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            sed in atque sequi alias impedit commodi eum dicta, enim asperiores
+            at, ullam voluptate officia nostrum quaerat provident aut iure
+            incidunt vel quia qui facilis. Expedita sapiente hic veritatis
+            eaque, molestias magnam placeat quae illum perferendis explicabo
+            assumenda quasi, fugit earum.
+          </p>
+          <div>sa</div>
+          <div>sad</div>
+        </div>
+      </article>
+    </section>
   );
 };
 

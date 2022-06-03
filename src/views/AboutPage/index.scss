@@ -1,0 +1,8 @@
+@import "styles/colors.scss";
+
+.about {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+  position: relative;
+}
