@@ -1,6 +1,6 @@
 import { SocialsItem } from "models/generic.model";
 
-const TestSocials = ({ className = "", items }: Props) => {
+const Socials = ({ className = "", items }: Props) => {
   const content = items.map(({ href, icon }) => (
     <a key={href} href={href} target="_blank" rel="noopener noreferrer">
       {icon}
@@ -10,7 +10,7 @@ const TestSocials = ({ className = "", items }: Props) => {
   return <div className={className}>{content}</div>;
 };
 
-export default TestSocials;
+export default Socials;
 
 type Props = {
   items: SocialsItem[];

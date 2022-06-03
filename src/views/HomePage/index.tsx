@@ -5,7 +5,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CtaButton from "components/CtaButton";
-import TestSocials from "components/TestSocials";
+import Socials from "components/Socials";
 
 import "./index.scss";
 
@@ -33,7 +33,7 @@ const HomePage = () => {
           <h1>Boris Simic</h1>
           <h4 className="text-light">Front-end Developer</h4>
           <CtaButton />
-          <TestSocials className="home__socials" items={socialsItems} />
+          <Socials className="home__socials" items={socialsItems} />
         </div>
 
         <div className="home__image_contanier">

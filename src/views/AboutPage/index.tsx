@@ -1,6 +1,6 @@
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TestSocials from "components/TestSocials";
+import Socials from "components/Socials";
 
 import "./index.scss";
 
@@ -13,7 +13,7 @@ const AboutPage = () => {
   ];
   return (
     <div>
-      <TestSocials items={socialsItems} />
+      <Socials items={socialsItems} />
     </div>
   );
 };

@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   width: 100%;
   height: 90px;
@@ -11,16 +12,30 @@
   bottom: 0;
   background-color: $color-primary;
   grid-row-start: 4;
-  &__test1 {
+
+  &__socials {
     display: flex;
     justify-content: center;
+    gap: 16px;
+
+    a {
+      background-color: $color-bg;
+      color: $color-white;
+      padding: 10px;
+      border-radius: 0.7rem;
+      display: flex;
+      border: 1px solid transparent;
+      transition: all 400 ease;
+
+      &:hover {
+        background-color: transparent;
+        color: $color-bg;
+        border-color: $color-bg;
+      }
+    }
   }
   &__text {
-    align-self: center;
-  }
-
-  &_nav {
-    display: flex;
-    justify-content: space-around;
+    color: $color-bg;
+    margin-bottom: 5px;
   }
 }
